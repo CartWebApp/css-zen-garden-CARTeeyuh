@@ -1,1 +1,13 @@
-/* Empty file for template. Remember to edit only this file and not the HTML file */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    margin: 2;
+    padding: 5;
+}
+
+body {
+    font: 75% verdana;
+}
