@@ -1,25 +1,32 @@
 body {
-    background-color: white;
-    /* background-image: url('zen-garden-background.jpg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body {
+    display: grid;
     display: flex;
     line-height: 50px;
     padding: 20px;
     flex-direction: column;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font: 120%'timesnewroman';
+    font: 120% 'timesnewroman';
     font-size: 19px;
     color: rgba(100, 60, 0, 0.807);
     width: 95%;
     height: 95%;
     align-content: center;
     /* border: rgb(255, 42, 0) 10px solid; */
+    background-color: white;
+    background-image: url('zen-garden-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div > p {
+    font: 120% 'timesnewroman';
+}
+
+[id^="zen-"] {
+    /* display: flex; */
 }
 
 header[role="banner"] {
@@ -32,6 +39,10 @@ header[role="banner"] {
 
 
 #zen-intro {
+    display: grid;
+    grid-column-start: span 4;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    grid-column-start: span 4;
     display: flex;
     background-color: rgba(0, 171, 190, 0.563);
     align-self: center;
@@ -41,7 +52,7 @@ header[role="banner"] {
     flex-basis: 99%;
 }
 
-#zen-explanation, #zen-participation {
+[id$="-explanation"], [id*="-participation"] {
     width: 1000px;
     background: rgba(255, 0, 0 , 0.4);
 }
@@ -80,6 +91,12 @@ header[role="banner"] {
     flex-wrap: wrap;
 }
 
+[id~="-benefits"], [id|="zen-require"] {
+    display: flex;
+    border: rgb(255, 0, 111) 5px solid;
+
+}
+
 
 #zen-intro {
     order: 1;
@@ -88,9 +105,6 @@ header[role="banner"] {
 #zen-summary {
     order: 2;
 }
-
-
-
 
 
 .intro {
