@@ -1,29 +1,39 @@
 body {
-    background-image: url('zen-garden-background.jpg');
+    background-color: white;
+    /* background-image: url('zen-garden-background.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#css-zen-garden {
+body {
     display: flex;
+    line-height: 50px;
     padding: 20px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    flex-wrap: wrap;
-    font: 120% 'arial';
+    font: 120%'timesnewroman';
+    font-size: 19px;
     color: rgba(100, 60, 0, 0.807);
-    width: 96%;
+    width: 95%;
     height: 95%;
     align-content: center;
-    border: rgb(255, 42, 0) 10px solid;
+    /* border: rgb(255, 42, 0) 10px solid; */
+}
+
+header[role="banner"] {
+    flex-basis: 10%;
+    height: 240px;
+    align-content: flex-start;
+    border: rgb(0, 0, 0) 2px solid;
+    background: rgba(255, 0, 0, 0.775);
 }
 
 
 #zen-intro {
     display: flex;
-    background-color: rgba(255, 238, 0, 0.716);
-    border: blue 10px solid;
+    background-color: rgba(0, 171, 190, 0.563);
     align-self: center;
     justify-content: center;
     flex-direction: row;
@@ -31,15 +41,20 @@ body {
     flex-basis: 99%;
 }
 
+#zen-explanation, #zen-participation {
+    width: 1000px;
+    background: rgba(255, 0, 0 , 0.4);
+}
+
 #zen-explanation {
     display: flex;
     border: blue 2px solid;
     align-self: center;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-basis: 25%;
-    height: 15vw;
     flex-wrap: wrap;
+    margin-right: 10px;
 }
 
 #zen-participation {
@@ -48,16 +63,14 @@ body {
     align-self: center;
     justify-content: center;
     flex-direction: row;
-    flex-basis: 25%;
-    height: 15vw;
     flex-wrap: wrap;
+    margin-left: auto;
 }
 
 #zen-intro > #zen-summary {
     display: flex;
     flex-direction: column;
 }
-
 .design-selection, .design-archives, .zen-resources {
     display: flex;
     border: blue 5px solid;
