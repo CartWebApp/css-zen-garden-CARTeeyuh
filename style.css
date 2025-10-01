@@ -1,16 +1,72 @@
+* {
+    text-align: center;
+}
+
+header[role="banner"]::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: url(download.png);
+}
+
+.page-wrapper {
+    margin: 3.5em;
+    margin-bottom: 5em;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+p:last-of-type {
+    font-style: normal;
+}
+
+p:nth-last-of-type(2) {
+    font-style: bold;
+}
+
+p:nth-of-type(2) {
+    font-style: oblique;
+}
+
+a:visited {
+    color: rgb(255, 123, 0);
+}
+
+p.div[id="zen-"] {
+    font-size: 200px;
+}
+
+a:hover {
+    color: rgb(255, 0, 187);
+}
+
+a:link {
+    color: rgb(186, 255, 25);
+}
+
+p:hover {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+p:empty {
+    width: 80%;
+    height: 80%;
+}
+
 body {
     display: grid;
     display: flex;
     line-height: 50px;
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
     justify-self: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
     font: 120% 'timesnewroman';
-    font-size: 19px;
-    color: rgba(100, 60, 0, 0.807);
+    color: rgb(0, 0, 0);
     width: 95%;
     height: 95%;
     align-content: center;
@@ -21,20 +77,27 @@ body {
     background-size: cover;
 }
 
+.design-archives .a { 
+    font-weight: bold;
+}
+
 div > p {
     font: 120% 'timesnewroman';
 }
 
 [id^="zen-"] {
-    /* display: flex; */
+    font-size: 19px;
 }
 
 header[role="banner"] {
-    flex-basis: 10%;
-    height: 240px;
+    flex-basis: 25%;
+    height: 160px;
     align-content: flex-start;
-    border: rgb(0, 0, 0) 2px solid;
-    background: rgba(255, 0, 0, 0.775);
+    background: rgb(255, 162, 218);
+    border: rgb(249, 72, 255) solid 2px;
+    box-shadow: 0 0 10px black;
+    border-radius: 25px;
+
 }
 
 
@@ -44,7 +107,6 @@ header[role="banner"] {
     grid-template: repeat(4, 1fr) / repeat(3, 1fr);
     grid-column-start: span 4;
     display: flex;
-    background-color: rgba(0, 171, 190, 0.563);
     align-self: center;
     justify-content: center;
     flex-direction: row;
@@ -53,13 +115,34 @@ header[role="banner"] {
 }
 
 [id$="-explanation"], [id*="-participation"] {
-    width: 1000px;
-    background: rgba(255, 0, 0 , 0.4);
+    display: flex;
+    width: 1250px;
+    gap: 5px;
+    background: rgb(255, 157, 229);
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    border: rgb(249, 72, 255) solid 2px;
+}
+
+[class~="benefits"], [class|="requirements"] {
+    justify-self: start;
+    border: rgb(249, 72, 255) solid 2px;
+    display:flex;
+    width: 1250px;
+    gap: 5px;
+    background: rgb(255, 157, 229);
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: black 0 0 10px;
+
+}
+
+[class~="benefits"] {
+    margin-left: 600px;
 }
 
 #zen-explanation {
     display: flex;
-    border: blue 2px solid;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -70,31 +153,24 @@ header[role="banner"] {
 
 #zen-participation {
     display: flex;
-    border: green 2px solid;
     align-self: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: auto;
+    margin-left: 600px;
+    margin-top: 1em;
 }
 
 #zen-intro > #zen-summary {
     display: flex;
     flex-direction: column;
 }
-.design-selection, .design-archives, .zen-resources {
+.design-selection.design-archives.zen-resources {
     display: flex;
-    border: blue 5px solid;
     flex-basis: 20%;
     align-self: center;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-[id~="-benefits"], [id|="zen-require"] {
-    display: flex;
-    border: rgb(255, 0, 111) 5px solid;
-
 }
 
 
