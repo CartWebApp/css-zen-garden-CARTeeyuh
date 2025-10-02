@@ -2,6 +2,37 @@
     text-align: center;
 }
 
+:root {
+    background-color: rgb(252, 163, 255);
+    padding: 10px;
+  }
+
+a:only-child {
+    font-weight: bold;
+}
+
+::selection {
+    color: rgb(255, 161, 255);
+    background: rgb(0, 0, 0);
+  }
+
+:not(p) {
+    font-size: 100%;
+}
+
+p:first-child {
+    background-color: rgb(235, 171, 255);
+  }
+
+p::first-line {
+    font-size: 20px;
+  }
+
+  p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+  }
+
 header[role="banner"]::before {
     content: "";
     height: 50px;
@@ -14,6 +45,10 @@ header[role="banner"]::before {
     margin-bottom: 5em;
 }
 
+.page-wrapper .intro {
+    font-size: 100%;
+}
+
 p:first-of-type {
     font-weight: bold;
 }
@@ -22,7 +57,7 @@ p:last-of-type {
     font-style: normal;
 }
 
-p:nth-last-of-type(2) {
+p:nth-last-of-type(3) {
     font-style: bold;
 }
 
@@ -43,7 +78,7 @@ a:hover {
 }
 
 a:link {
-    color: rgb(186, 255, 25);
+    color: rgb(25, 137, 0);
 }
 
 p:hover {
@@ -72,17 +107,19 @@ body {
     align-content: center;
     /* border: rgb(255, 42, 0) 10px solid; */
     background-color: white;
-    background-image: url('zen-garden-background.jpg');
+    background-image: url('zen-garden-background-finale.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.design-archives .a { 
+.design-archives { 
     font-weight: bold;
 }
 
 div > p {
     font: 120% 'timesnewroman';
+    border: 2px solid rgb(255, 91, 209);
+    border-radius: 10px;
 }
 
 [id^="zen-"] {
@@ -91,7 +128,7 @@ div > p {
 
 header[role="banner"] {
     flex-basis: 25%;
-    height: 160px;
+    height: 85px;
     align-content: flex-start;
     background: rgb(255, 162, 218);
     border: rgb(249, 72, 255) solid 2px;
@@ -137,8 +174,12 @@ header[role="banner"] {
 
 }
 
+[class|="requirements"] {
+    width: 2000px;
+}
+
 [class~="benefits"] {
-    margin-left: 600px;
+    margin-left: 750px;
 }
 
 #zen-explanation {
@@ -157,7 +198,7 @@ header[role="banner"] {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 600px;
+    margin-left: 750px;
     margin-top: 1em;
 }
 
