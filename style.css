@@ -5,6 +5,15 @@
 :root {
     background-color: rgb(252, 163, 255);
     padding: 10px;
+}
+
+[class~="benefits"]::after {
+  content: " - Or maybe just for fun!";
+  align-self: center;
+}
+
+a:active {
+    background-color: rgb(255, 226, 255);
   }
 
 a:only-child {
@@ -28,10 +37,10 @@ p::first-line {
     font-size: 20px;
   }
 
-  p::first-letter {
+p::first-letter {
     font-size: 200%;
     font-weight: bold;
-  }
+}
 
 header[role="banner"]::before {
     content: "";
@@ -129,7 +138,7 @@ div > p {
 header[role="banner"] {
     flex-basis: 25%;
     height: 85px;
-    align-content: flex-start;
+    align-content: end;
     background: rgb(255, 162, 218);
     border: rgb(249, 72, 255) solid 2px;
     box-shadow: 0 0 10px black;
