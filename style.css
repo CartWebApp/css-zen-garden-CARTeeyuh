@@ -7,23 +7,42 @@
     padding: 10px;
 }
 
+div p {
+    font-size: 150%;
+}
+
 [class~="benefits"]::after {
   content: " - Or maybe just for fun!";
   align-self: center;
 }
 
+p:nth-child(4) {
+    font-weight: bold;
+}
+
+p:nth-last-child(2) {
+    font-weight: bold;
+}
+
+a:last-child {
+    font-style: italic;
+}
+
 a:active {
     background-color: rgb(255, 226, 255);
-  }
-
+}
 a:only-child {
     font-weight: bold;
 }
 
+a:focus {
+    background-color: rgb(255, 87, 241);
+  }
+
 ::selection {
     color: rgb(255, 161, 255);
     background: rgb(0, 0, 0);
-  }
+}
 
 :not(p) {
     font-size: 100%;
@@ -31,22 +50,30 @@ a:only-child {
 
 p:first-child {
     background-color: rgb(235, 171, 255);
-  }
+}
 
 p::first-line {
     font-size: 20px;
-  }
+}
 
 p::first-letter {
     font-size: 200%;
     font-weight: bold;
 }
 
-header[role="banner"]::before {
-    content: "";
-    height: 50px;
-    width: 50px;
-    background: url(download.png);
+body::before {
+    margin-top: 90px;
+    content: "Welcome, to the";
+    font-size: 300%;
+}
+
+h1::before, h1::after {
+    content: "🌸";
+    font-size: 100%;
+}
+
+h1:only-of-type {
+    font-family: "copperplate", "copperplate gothic light";
 }
 
 .page-wrapper {
@@ -82,6 +109,33 @@ p.div[id="zen-"] {
     font-size: 200px;
 }
 
+[title] {
+    color: rgb(146, 97, 0);
+
+}
+
+[class="select"] {
+    font-size: 140%;
+}
+
+.wrapper .design-selection{
+    justify-self: center;
+    width: 600px;
+    border: 5px #d35bf1 solid;
+  }
+
+h3 ~ nav ul {
+    list-style-type: none;
+}
+
+nav + p {
+    font-weight: italic;
+}
+
+h3 ~ ul {
+    list-style-type: none;
+}
+
 a:hover {
     color: rgb(255, 0, 187);
 }
@@ -114,7 +168,6 @@ body {
     width: 95%;
     height: 95%;
     align-content: center;
-    /* border: rgb(255, 42, 0) 10px solid; */
     background-color: white;
     background-image: url('zen-garden-background-finale.jpg');
     background-repeat: no-repeat;
@@ -137,7 +190,7 @@ div > p {
 
 header[role="banner"] {
     flex-basis: 25%;
-    height: 85px;
+    height: 95px;
     align-content: end;
     background: rgb(255, 162, 218);
     border: rgb(249, 72, 255) solid 2px;
