@@ -1,159 +1,130 @@
+/*makes all text centered*/
 * {
     text-align: center;
 }
 
+/*makes the overall design of everything in the page*/
 :root {
     background-color: rgb(252, 163, 255);
     padding: 10px;
 }
-
 div p {
     font-size: 150%;
 }
-
 [class~="benefits"]::after {
   content: " - Or maybe just for fun!";
   align-self: center;
 }
-
 p:nth-child(4) {
     font-weight: bold;
 }
-
 p:nth-last-child(2) {
     font-weight: bold;
 }
-
 a:last-child {
     font-style: italic;
 }
-
 a:active {
     background-color: rgb(255, 226, 255);
 }
 a:only-child {
     font-weight: bold;
 }
-
 a:focus {
     background-color: rgb(255, 87, 241);
   }
-
 ::selection {
     color: rgb(255, 161, 255);
     background: rgb(0, 0, 0);
 }
-
 :not(p) {
     font-size: 100%;
 }
-
 p:first-child {
     background-color: rgb(235, 171, 255);
 }
-
 p::first-line {
     font-size: 20px;
 }
-
 p::first-letter {
     font-size: 200%;
     font-weight: bold;
 }
-
 body::before {
     margin-top: 90px;
     content: "Welcome, to the";
     font-size: 300%;
 }
-
 h1::before, h1::after {
     content: "🌸";
     font-size: 100%;
 }
-
 h1:only-of-type {
     font-family: "copperplate", "copperplate gothic light";
 }
-
 .page-wrapper {
     margin: 3.5em;
     margin-bottom: 5em;
 }
-
 .page-wrapper .intro {
     font-size: 100%;
 }
-
 p:first-of-type {
     font-weight: bold;
 }
-
 p:last-of-type {
     font-style: normal;
 }
-
 p:nth-last-of-type(3) {
     font-style: bold;
 }
-
 p:nth-of-type(2) {
     font-style: oblique;
 }
-
 a:visited {
     color: rgb(255, 123, 0);
 }
-
 p.div[id="zen-"] {
     font-size: 200px;
 }
-
 [title] {
     color: rgb(146, 97, 0);
-
 }
-
 [class="select"] {
     font-size: 140%;
 }
-
 .wrapper .design-selection{
     justify-self: center;
     width: 600px;
     border: 5px #d35bf1 solid;
   }
-
 h3 ~ nav ul {
     list-style-type: none;
 }
-
 nav + p {
     font-weight: italic;
 }
-
 h3 ~ ul {
     list-style-type: none;
 }
-
 a:hover {
     color: rgb(255, 0, 187);
 }
-
 a:link {
     color: rgb(25, 137, 0);
 }
-
 p:hover {
     font-size: 150%;
     font-weight: bold;
 }
-
 p:empty {
     width: 80%;
     height: 80%;
 }
 
+
+
+/*makes the basis of the page that I designed on top of*/
 body {
     display: grid;
     display: flex;
@@ -188,6 +159,7 @@ div > p {
     font-size: 19px;
 }
 
+/*code to make the design of the title*/
 header[role="banner"] {
     flex-basis: 25%;
     height: 95px;
@@ -199,7 +171,7 @@ header[role="banner"] {
 
 }
 
-
+/*code to differentiate the sections/paragraphs of the page*/
 #zen-intro {
     display: grid;
     grid-column-start: span 4;
