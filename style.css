@@ -255,19 +255,6 @@ header[role="banner"] {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-
-#zen-intro {
-    order: 1;
-}
-
 #zen-summary {
     order: 2;
 }
-
-
-.intro {
-    margin: 2;
-    padding: 5;
-}
-
