@@ -1,6 +1,7 @@
 /*makes all text centered*/
 * {
     text-align: center;
+    z-index: 1;
 }
 
 /*makes the overall design of everything in the page*/
@@ -114,14 +115,21 @@ a:link {
     color: rgb(25, 137, 0);
 }
 p:hover {
-    font-size: 150%;
     font-weight: bold;
 }
 p:empty {
     width: 80%;
     height: 80%;
 }
-
+[class="extra1"] {
+    height: 100%;
+    width: 100%;
+    bottom: -1900px;
+    position: absolute;
+    background-image: url(360_F_985548158_QIkLsX6vGduny37W40oYBwli8u3OoA5c-removebg-preview.png);
+    background-size: cover;
+    z-index: 0;
+}
 
 
 /*makes the basis of the page that I designed on top of*/
